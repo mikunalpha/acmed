@@ -11,7 +11,9 @@ location ^~ /.well-known/acme-challenge/ {
 }
 ```
 
-You should try staging environment of letsencrypt before using production environment. See https://letsencrypt.org/docs/staging-environment/ .
+You should try staging environment of letsencrypt before using production environment. See https://letsencrypt.org/docs/staging-environment/ .  
+
+If you modified the `acmed.json`, you need to restart the acmed.
 
 # Install
 ```
@@ -19,7 +21,7 @@ go get -u github.com/mikunalpha/acmed
 ```
 
 # Usage
-Create a `acmed.json` file in current as below:
+Create a `acmed.json` file in current folder as below:
 ```json
 {
   "server": {
