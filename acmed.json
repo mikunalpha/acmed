@@ -5,13 +5,13 @@
       "email": "mikun.cheng@lionic.com",
       "domain": "cmsdev.aegislab.com",
       "disco": "https://acme-staging.api.letsencrypt.org/directory",
-      "remian": 21,
+      "remain": 21,
       "bundle": true
     }, {
       "email": "mikun.cheng@lionic.com",
       "domain": "ufs.lionic.com",
       "disco": "https://acme-staging.api.letsencrypt.org/directory",
-      "remian": 21,
+      "remain": 21,
       "bundle": true
     }]
   }

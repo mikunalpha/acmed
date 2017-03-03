@@ -42,8 +42,8 @@ func runRun(arguments []string) {
 		if web.Disco == nil || *web.Disco == "" {
 			c.Server.Webs[i].Disco = &defaultDisco
 		}
-		if web.Remaining == nil {
-			c.Server.Webs[i].Remaining = &defaultRemaining
+		if web.Remain == nil {
+			c.Server.Webs[i].Remain = &defaultRemain
 		}
 		if web.Bundle == nil {
 			c.Server.Webs[i].Bundle = &defaultBundle
@@ -83,7 +83,7 @@ func getCert(c configServerWeb) error {
 	if err == nil {
 		// do not re-issue certificate if it's not about to expire in less than three weeks
 		expiresIn := crt.NotAfter.Sub(time.Now())
-		if expiresIn > time.Duration(*c.Remaining)*24*time.Hour {
+		if expiresIn > time.Duration(*c.Remain)*24*time.Hour {
 			// errorf("cert of %s is still valid for more than a three weeks, not renewing", cn)
 			fmt.Printf("cert of %s is still valid, not renewing\n", *c.Domain)
 			return nil

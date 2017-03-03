@@ -26,7 +26,7 @@ var (
 
 	defaultEmail = "email@example.com"
 
-	defaultRemaining = uint64(21)
+	defaultRemain = uint64(21)
 
 	defaultBundle = true
 
@@ -45,11 +45,11 @@ type configServer struct {
 }
 
 type configServerWeb struct {
-	Email     *string `json:"email"`
-	Domain    *string `json:"domain"`
-	Disco     *string `json:"disco"`
-	Remaining *uint64 `json:"remaining"`
-	Bundle    *bool   `json:"bundle"`
+	Email  *string `json:"email"`
+	Domain *string `json:"domain"`
+	Disco  *string `json:"disco"`
+	Remain *uint64 `json:"remain"`
+	Bundle *bool   `json:"bundle"`
 }
 
 // readConfigFile reads configuration of acmed from a file named acmed.json.
