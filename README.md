@@ -30,7 +30,7 @@ Create a `acmed.json` file in current folder as below:
       "email": "example@email.com",
       "domain": "example.domain.com",
       "disco": "https://acme-staging.api.letsencrypt.org/directory",
-      "remian": 21,
+      "remain": 21,
       "bundle": true
     }]
   }
