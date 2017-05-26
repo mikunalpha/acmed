@@ -144,7 +144,7 @@ type accountConfig struct {
 // by replacing path extention with ".key".
 //func readAccountConfig(name string) (*userConfig, error) {
 func readAccountConfig(domain string) (*accountConfig, error) {
-	b, err := ioutil.ReadFile(filepath.Join(filepath.Dir(defaultConfigDir), domain, "account.json"))
+	b, err := ioutil.ReadFile(filepath.Join(filepath.Dir(defaultConfigDir), "webs", domain, "account.json"))
 	if err != nil {
 		return nil, err
 	}
